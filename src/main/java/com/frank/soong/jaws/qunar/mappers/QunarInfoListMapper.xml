@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.frank.soong.jaws.qunar.mappers.QunarInfoListMapper" >
+  <resultMap id="BaseResultMap" type="com.frank.soong.jaws.qunar.bean.QunarInfoList" >
+    <result column="accomInclude" property="accominclude" jdbcType="VARCHAR" />
+    <result column="accomInterview" property="accominterview" jdbcType="INTEGER" />
+    <result column="activitiesInfo" property="activitiesinfo" jdbcType="VARCHAR" />
+    <result column="adultNum" property="adultnum" jdbcType="INTEGER" />
+    <result column="advanceDay" property="advanceday" jdbcType="INTEGER" />
+    <result column="allDate" property="alldate" jdbcType="VARCHAR" />
+    <result column="aroundShortTitle" property="aroundshorttitle" jdbcType="VARCHAR" />
+    <result column="arrive" property="arrive" jdbcType="VARCHAR" />
+    <result column="availableBookDays" property="availablebookdays" jdbcType="VARCHAR" />
+    <result column="b2c" property="b2c" jdbcType="INTEGER" />
+    <result column="backtraffic" property="backtraffic" jdbcType="VARCHAR" />
+    <result column="bmapGroupDest" property="bmapgroupdest" jdbcType="VARCHAR" />
+    <result column="bmapGroupId" property="bmapgroupid" jdbcType="VARCHAR" />
+    <result column="bmapGroupType" property="bmapgrouptype" jdbcType="VARCHAR" />
+    <result column="bookableToday" property="bookabletoday" jdbcType="INTEGER" />
+    <result column="bookableTomorrow" property="bookabletomorrow" jdbcType="INTEGER" />
+    <result column="bookableWeekend" property="bookableweekend" jdbcType="INTEGER" />
+    <result column="bookingAdult" property="bookingadult" jdbcType="INTEGER" />
+    <result column="bookingChild" property="bookingchild" jdbcType="INTEGER" />
+    <result column="bookingDate" property="bookingdate" jdbcType="VARCHAR" />
+    <result column="bookingNum" property="bookingnum" jdbcType="VARCHAR" />
+    <result column="bookingTimeDiff" property="bookingtimediff" jdbcType="VARCHAR" />
+    <result column="bookingTypeCateTitle" property="bookingtypecatetitle" jdbcType="VARCHAR" />
+    <result column="busiLine" property="busiline" jdbcType="INTEGER" />
+    <result column="busiType" property="busitype" jdbcType="VARCHAR" />
+    <result column="candidateImage" property="candidateimage" jdbcType="VARCHAR" />
+    <result column="candidateImageId" property="candidateimageid" jdbcType="VARCHAR" />
+    <result column="candidateTitle" property="candidatetitle" jdbcType="VARCHAR" />
+    <result column="childNum" property="childnum" jdbcType="INTEGER" />
+    <result column="cityPoint" property="citypoint" jdbcType="VARCHAR" />
+    <result column="citys" property="citys" jdbcType="VARCHAR" />
+    <result column="click" property="click" jdbcType="INTEGER" />
+    <result column="complement" property="complement" jdbcType="INTEGER" />
+    <result column="countries" property="countries" jdbcType="VARCHAR" />
+    <result column="dappSales" property="dappsales" jdbcType="VARCHAR" />
+    <result column="dateofdeparture" property="dateofdeparture" jdbcType="VARCHAR" />
+    <result column="dateofexpire" property="dateofexpire" jdbcType="VARCHAR" />
+    <result column="dep" property="dep" jdbcType="VARCHAR" />
+    <result column="details" property="details" jdbcType="VARCHAR" />
+    <result column="discount" property="discount" jdbcType="VARCHAR" />
+    <result column="dpv" property="dpv" jdbcType="INTEGER" />
+    <result column="drivingTime" property="drivingtime" jdbcType="INTEGER" />
+    <result column="duv" property="duv" jdbcType="INTEGER" />
+    <result column="encodeId" property="encodeid" jdbcType="VARCHAR" />
+    <result column="extensionImg" property="extensionimg" jdbcType="VARCHAR" />
+    <result column="featureTag" property="featuretag" jdbcType="VARCHAR" />
+    <result column="feeinfo" property="feeinfo" jdbcType="VARCHAR" />
+    <result column="flightTransfer" property="flighttransfer" jdbcType="VARCHAR" />
+    <result column="flightType" property="flighttype" jdbcType="VARCHAR" />
+    <result column="freetripPickup" property="freetrippickup" jdbcType="INTEGER" />
+    <result column="freetripVisa" property="freetripvisa" jdbcType="INTEGER" />
+    <result column="groupGuarantee" property="groupguarantee" jdbcType="INTEGER" />
+    <result column="hasCallOnline" property="hascallonline" jdbcType="INTEGER" />
+    <result column="highlights" property="highlights" jdbcType="VARCHAR" />
+    <result column="hotelFee" property="hotelfee" jdbcType="VARCHAR" />
+    <result column="hotelGrade" property="hotelgrade" jdbcType="VARCHAR" />
+    <result column="hotelGradeText" property="hotelgradetext" jdbcType="VARCHAR" />
+    <result column="hotelInfo" property="hotelinfo" jdbcType="VARCHAR" />
+    <result column="hotelPos" property="hotelpos" jdbcType="VARCHAR" />
+    <result column="hotelTypes" property="hoteltypes" jdbcType="VARCHAR" />
+    <result column="id" property="id" jdbcType="VARCHAR" />
+    <result column="imgs" property="imgs" jdbcType="VARCHAR" />
+    <result column="isSd" property="issd" jdbcType="INTEGER" />
+    <result column="isTuan" property="istuan" jdbcType="INTEGER" />
+    <result column="is_hotel_flight_package" property="isHotelFlightPackage" jdbcType="INTEGER" />
+    <result column="itineraryDay" property="itineraryday" jdbcType="INTEGER" />
+    <result column="lineSubjects" property="linesubjects" jdbcType="VARCHAR" />
+    <result column="localDepartures" property="localdepartures" jdbcType="VARCHAR" />
+    <result column="longPlanId" property="longplanid" jdbcType="VARCHAR" />
+    <result column="longPlanTitle" property="longplantitle" jdbcType="VARCHAR" />
+    <result column="meal" property="meal" jdbcType="VARCHAR" />
+    <result column="mobFunction" property="mobfunction" jdbcType="VARCHAR" />
+    <result column="months" property="months" jdbcType="VARCHAR" />
+    <result column="noExtraPayment" property="noextrapayment" jdbcType="INTEGER" />
+    <result column="noShopping" property="noshopping" jdbcType="INTEGER" />
+    <result column="originalPrice" property="originalprice" jdbcType="INTEGER" />
+    <result column="packDesc" property="packdesc" jdbcType="VARCHAR" />
+    <result column="pid" property="pid" jdbcType="INTEGER" />
+    <result column="price" property="price" jdbcType="INTEGER" />
+    <result column="priceDate" property="pricedate" jdbcType="VARCHAR" />
+    <result column="productFeatures" property="productfeatures" jdbcType="VARCHAR" />
+    <result column="productPromotions" property="productpromotions" jdbcType="VARCHAR" />
+    <result column="productRate" property="productrate" jdbcType="VARCHAR" />
+    <result column="productScore" property="productscore" jdbcType="VARCHAR" />
+    <result column="productTag" property="producttag" jdbcType="VARCHAR" />
+    <result column="promotion" property="promotion" jdbcType="VARCHAR" />
+    <result column="reviews" property="reviews" jdbcType="VARCHAR" />
+    <result column="roomNum" property="roomnum" jdbcType="VARCHAR" />
+    <result column="routeGrade" property="routegrade" jdbcType="VARCHAR" />
+    <result column="routeType" property="routetype" jdbcType="VARCHAR" />
+    <result column="sales" property="sales" jdbcType="VARCHAR" />
+    <result column="score" property="score" jdbcType="VARCHAR" />
+    <result column="search_title" property="searchTitle" jdbcType="VARCHAR" />
+    <result column="selfOrder" property="selforder" jdbcType="INTEGER" />
+    <result column="shortPlanId" property="shortplanid" jdbcType="VARCHAR" />
+    <result column="shortPlanTitle" property="shortplantitle" jdbcType="VARCHAR" />
+    <result column="sightPoint" property="sightpoint" jdbcType="VARCHAR" />
+    <result column="sightTicket" property="sightticket" jdbcType="VARCHAR" />
+    <result column="sights" property="sights" jdbcType="VARCHAR" />
+    <result column="sightspotImages" property="sightspotimages" jdbcType="VARCHAR" />
+    <result column="sightspot_b" property="sightspotB" jdbcType="VARCHAR" />
+    <result column="soldCount" property="soldcount" jdbcType="INTEGER" />
+    <result column="soldCount15" property="soldcount15" jdbcType="INTEGER" />
+    <result column="soldCount90" property="soldcount90" jdbcType="INTEGER" />
+    <result column="sourceurl" property="sourceurl" jdbcType="VARCHAR" />
+    <result column="subRegions" property="subregions" jdbcType="VARCHAR" />
+    <result column="summary" property="summary" jdbcType="VARCHAR" />
+    <result column="taocanDes" property="taocandes" jdbcType="VARCHAR" />
+    <result column="teamType" property="teamtype" jdbcType="VARCHAR" />
+    <result column="teamTypeId" property="teamtypeid" jdbcType="VARCHAR" />
+    <result column="testDiversityTag" property="testdiversitytag" jdbcType="VARCHAR" />
+    <result column="thumb" property="thumb" jdbcType="VARCHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="totalPrice" property="totalprice" jdbcType="INTEGER" />
+    <result column="totraffic" property="totraffic" jdbcType="VARCHAR" />
+    <result column="trafficFee" property="trafficfee" jdbcType="VARCHAR" />
+    <result column="trafficInfo" property="trafficinfo" jdbcType="VARCHAR" />
+    <result column="translator" property="translator" jdbcType="VARCHAR" />
+    <result column="ttsRouteType" property="ttsroutetype" jdbcType="VARCHAR" />
+    <result column="tuanTtsId" property="tuanttsid" jdbcType="VARCHAR" />
+    <result column="twoLeveltype" property="twoleveltype" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+    <result column="url" property="url" jdbcType="VARCHAR" />
+    <result column="visaEntryNum" property="visaentrynum" jdbcType="VARCHAR" />
+    <result column="visaPreBookDaysMax" property="visaprebookdaysmax" jdbcType="VARCHAR" />
+    <result column="visaStayDays" property="visastaydays" jdbcType="VARCHAR" />
+    <result column="visaUrgentState" property="visaurgentstate" jdbcType="VARCHAR" />
+    <result column="visaValidPeriod" property="visavalidperiod" jdbcType="VARCHAR" />
+    <result column="wifiGetWay" property="wifigetway" jdbcType="VARCHAR" />
+    <result column="wrapperScore" property="wrapperscore" jdbcType="VARCHAR" />
+    <result column="wrapperStar" property="wrapperstar" jdbcType="VARCHAR" />
+    <result column="wrpparid" property="wrpparid" jdbcType="VARCHAR" />
+  </resultMap>
+  <insert id="insert" parameterType="com.frank.soong.jaws.qunar.bean.QunarInfoList" >
+    insert into qunar_info_list (accomInclude, accomInterview, activitiesInfo, 
+      adultNum, advanceDay, allDate, 
+      aroundShortTitle, arrive, availableBookDays, 
+      b2c, backtraffic, bmapGroupDest, 
+      bmapGroupId, bmapGroupType, bookableToday, 
+      bookableTomorrow, bookableWeekend, bookingAdult, 
+      bookingChild, bookingDate, bookingNum, 
+      bookingTimeDiff, bookingTypeCateTitle, 
+      busiLine, busiType, candidateImage, 
+      candidateImageId, candidateTitle, childNum, 
+      cityPoint, citys, click, 
+      complement, countries, dappSales, 
+      dateofdeparture, dateofexpire, dep, 
+      details, discount, dpv, 
+      drivingTime, duv, encodeId, 
+      extensionImg, featureTag, feeinfo, 
+      flightTransfer, flightType, freetripPickup, 
+      freetripVisa, groupGuarantee, hasCallOnline, 
+      highlights, hotelFee, hotelGrade, 
+      hotelGradeText, hotelInfo, hotelPos, 
+      hotelTypes, id, imgs, 
+      isSd, isTuan, is_hotel_flight_package, 
+      itineraryDay, lineSubjects, localDepartures, 
+      longPlanId, longPlanTitle, meal, 
+      mobFunction, months, noExtraPayment, 
+      noShopping, originalPrice, packDesc, 
+      pid, price, priceDate, 
+      productFeatures, productPromotions, productRate, 
+      productScore, productTag, promotion, 
+      reviews, roomNum, routeGrade, 
+      routeType, sales, score, 
+      search_title, selfOrder, shortPlanId, 
+      shortPlanTitle, sightPoint, sightTicket, 
+      sights, sightspotImages, sightspot_b, 
+      soldCount, soldCount15, soldCount90, 
+      sourceurl, subRegions, summary, 
+      taocanDes, teamType, teamTypeId, 
+      testDiversityTag, thumb, title, 
+      totalPrice, totraffic, trafficFee, 
+      trafficInfo, translator, ttsRouteType, 
+      tuanTtsId, twoLeveltype, type, 
+      url, visaEntryNum, visaPreBookDaysMax, 
+      visaStayDays, visaUrgentState, visaValidPeriod, 
+      wifiGetWay, wrapperScore, wrapperStar, 
+      wrpparid,sort,creatTime)
+    values (#{accominclude,jdbcType=VARCHAR}, #{accominterview,jdbcType=INTEGER}, #{activitiesinfo,jdbcType=VARCHAR}, 
+      #{adultnum,jdbcType=INTEGER}, #{advanceday,jdbcType=INTEGER}, #{alldate,jdbcType=VARCHAR}, 
+      #{aroundshorttitle,jdbcType=VARCHAR}, #{arrive,jdbcType=VARCHAR}, #{availablebookdays,jdbcType=VARCHAR}, 
+      #{b2c,jdbcType=INTEGER}, #{backtraffic,jdbcType=VARCHAR}, #{bmapgroupdest,jdbcType=VARCHAR}, 
+      #{bmapgroupid,jdbcType=VARCHAR}, #{bmapgrouptype,jdbcType=VARCHAR}, #{bookabletoday,jdbcType=INTEGER}, 
+      #{bookabletomorrow,jdbcType=INTEGER}, #{bookableweekend,jdbcType=INTEGER}, #{bookingadult,jdbcType=INTEGER}, 
+      #{bookingchild,jdbcType=INTEGER}, #{bookingdate,jdbcType=VARCHAR}, #{bookingnum,jdbcType=VARCHAR}, 
+      #{bookingtimediff,jdbcType=VARCHAR}, #{bookingtypecatetitle,jdbcType=VARCHAR}, 
+      #{busiline,jdbcType=INTEGER}, #{busitype,jdbcType=VARCHAR}, #{candidateimage,jdbcType=VARCHAR}, 
+      #{candidateimageid,jdbcType=VARCHAR}, #{candidatetitle,jdbcType=VARCHAR}, #{childnum,jdbcType=INTEGER}, 
+      #{citypoint,jdbcType=VARCHAR}, #{citys,jdbcType=VARCHAR}, #{click,jdbcType=INTEGER}, 
+      #{complement,jdbcType=INTEGER}, #{countries,jdbcType=VARCHAR}, #{dappsales,jdbcType=VARCHAR}, 
+      #{dateofdeparture,jdbcType=VARCHAR}, #{dateofexpire,jdbcType=VARCHAR}, #{dep,jdbcType=VARCHAR}, 
+      #{details,jdbcType=VARCHAR}, #{discount,jdbcType=VARCHAR}, #{dpv,jdbcType=INTEGER}, 
+      #{drivingtime,jdbcType=INTEGER}, #{duv,jdbcType=INTEGER}, #{encodeid,jdbcType=VARCHAR}, 
+      #{extensionimg,jdbcType=VARCHAR}, #{featuretag,jdbcType=VARCHAR}, #{feeinfo,jdbcType=VARCHAR}, 
+      #{flighttransfer,jdbcType=VARCHAR}, #{flighttype,jdbcType=VARCHAR}, #{freetrippickup,jdbcType=INTEGER}, 
+      #{freetripvisa,jdbcType=INTEGER}, #{groupguarantee,jdbcType=INTEGER}, #{hascallonline,jdbcType=INTEGER}, 
+      #{highlights,jdbcType=VARCHAR}, #{hotelfee,jdbcType=VARCHAR}, #{hotelgrade,jdbcType=VARCHAR}, 
+      #{hotelgradetext,jdbcType=VARCHAR}, #{hotelinfo,jdbcType=VARCHAR}, #{hotelpos,jdbcType=VARCHAR}, 
+      #{hoteltypes,jdbcType=VARCHAR}, #{id,jdbcType=VARCHAR}, #{imgs,jdbcType=VARCHAR}, 
+      #{issd,jdbcType=INTEGER}, #{istuan,jdbcType=INTEGER}, #{isHotelFlightPackage,jdbcType=INTEGER}, 
+      #{itineraryday,jdbcType=INTEGER}, #{linesubjects,jdbcType=VARCHAR}, #{localdepartures,jdbcType=VARCHAR}, 
+      #{longplanid,jdbcType=VARCHAR}, #{longplantitle,jdbcType=VARCHAR}, #{meal,jdbcType=VARCHAR}, 
+      #{mobfunction,jdbcType=VARCHAR}, #{months,jdbcType=VARCHAR}, #{noextrapayment,jdbcType=INTEGER}, 
+      #{noshopping,jdbcType=INTEGER}, #{originalprice,jdbcType=INTEGER}, #{packdesc,jdbcType=VARCHAR}, 
+      #{pid,jdbcType=INTEGER}, #{price,jdbcType=INTEGER}, #{pricedate,jdbcType=VARCHAR}, 
+      #{productfeatures,jdbcType=VARCHAR}, #{productpromotions,jdbcType=VARCHAR}, #{productrate,jdbcType=VARCHAR}, 
+      #{productscore,jdbcType=VARCHAR}, #{producttag,jdbcType=VARCHAR}, #{promotion,jdbcType=VARCHAR}, 
+      #{reviews,jdbcType=VARCHAR}, #{roomnum,jdbcType=VARCHAR}, #{routegrade,jdbcType=VARCHAR}, 
+      #{routetype,jdbcType=VARCHAR}, #{sales,jdbcType=VARCHAR}, #{score,jdbcType=VARCHAR}, 
+      #{searchTitle,jdbcType=VARCHAR}, #{selforder,jdbcType=INTEGER}, #{shortplanid,jdbcType=VARCHAR}, 
+      #{shortplantitle,jdbcType=VARCHAR}, #{sightpoint,jdbcType=VARCHAR}, #{sightticket,jdbcType=VARCHAR}, 
+      #{sights,jdbcType=VARCHAR}, #{sightspotimages,jdbcType=VARCHAR}, #{sightspotB,jdbcType=VARCHAR}, 
+      #{soldcount,jdbcType=INTEGER}, #{soldcount15,jdbcType=INTEGER}, #{soldcount90,jdbcType=INTEGER}, 
+      #{sourceurl,jdbcType=VARCHAR}, #{subregions,jdbcType=VARCHAR}, #{summary,jdbcType=VARCHAR}, 
+      #{taocandes,jdbcType=VARCHAR}, #{teamtype,jdbcType=VARCHAR}, #{teamtypeid,jdbcType=VARCHAR}, 
+      #{testdiversitytag,jdbcType=VARCHAR}, #{thumb,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, 
+      #{totalprice,jdbcType=INTEGER}, #{totraffic,jdbcType=VARCHAR}, #{trafficfee,jdbcType=VARCHAR}, 
+      #{trafficinfo,jdbcType=VARCHAR}, #{translator,jdbcType=VARCHAR}, #{ttsroutetype,jdbcType=VARCHAR}, 
+      #{tuanttsid,jdbcType=VARCHAR}, #{twoleveltype,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, 
+      #{url,jdbcType=VARCHAR}, #{visaentrynum,jdbcType=VARCHAR}, #{visaprebookdaysmax,jdbcType=VARCHAR}, 
+      #{visastaydays,jdbcType=VARCHAR}, #{visaurgentstate,jdbcType=VARCHAR}, #{visavalidperiod,jdbcType=VARCHAR}, 
+      #{wifigetway,jdbcType=VARCHAR}, #{wrapperscore,jdbcType=VARCHAR}, #{wrapperstar,jdbcType=VARCHAR}, 
+      #{wrpparid,jdbcType=VARCHAR},#{sort},#{createTime})
+  </insert>
+  <insert id="insertSelective" parameterType="com.frank.soong.jaws.qunar.bean.QunarInfoList" >
+    insert into qunar_info_list
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="accominclude != null" >
+        accomInclude,
+      </if>
+      <if test="accominterview != null" >
+        accomInterview,
+      </if>
+      <if test="activitiesinfo != null" >
+        activitiesInfo,
+      </if>
+      <if test="adultnum != null" >
+        adultNum,
+      </if>
+      <if test="advanceday != null" >
+        advanceDay,
+      </if>
+      <if test="alldate != null" >
+        allDate,
+      </if>
+      <if test="aroundshorttitle != null" >
+        aroundShortTitle,
+      </if>
+      <if test="arrive != null" >
+        arrive,
+      </if>
+      <if test="availablebookdays != null" >
+        availableBookDays,
+      </if>
+      <if test="b2c != null" >
+        b2c,
+      </if>
+      <if test="backtraffic != null" >
+        backtraffic,
+      </if>
+      <if test="bmapgroupdest != null" >
+        bmapGroupDest,
+      </if>
+      <if test="bmapgroupid != null" >
+        bmapGroupId,
+      </if>
+      <if test="bmapgrouptype != null" >
+        bmapGroupType,
+      </if>
+      <if test="bookabletoday != null" >
+        bookableToday,
+      </if>
+      <if test="bookabletomorrow != null" >
+        bookableTomorrow,
+      </if>
+      <if test="bookableweekend != null" >
+        bookableWeekend,
+      </if>
+      <if test="bookingadult != null" >
+        bookingAdult,
+      </if>
+      <if test="bookingchild != null" >
+        bookingChild,
+      </if>
+      <if test="bookingdate != null" >
+        bookingDate,
+      </if>
+      <if test="bookingnum != null" >
+        bookingNum,
+      </if>
+      <if test="bookingtimediff != null" >
+        bookingTimeDiff,
+      </if>
+      <if test="bookingtypecatetitle != null" >
+        bookingTypeCateTitle,
+      </if>
+      <if test="busiline != null" >
+        busiLine,
+      </if>
+      <if test="busitype != null" >
+        busiType,
+      </if>
+      <if test="candidateimage != null" >
+        candidateImage,
+      </if>
+      <if test="candidateimageid != null" >
+        candidateImageId,
+      </if>
+      <if test="candidatetitle != null" >
+        candidateTitle,
+      </if>
+      <if test="childnum != null" >
+        childNum,
+      </if>
+      <if test="citypoint != null" >
+        cityPoint,
+      </if>
+      <if test="citys != null" >
+        citys,
+      </if>
+      <if test="click != null" >
+        click,
+      </if>
+      <if test="complement != null" >
+        complement,
+      </if>
+      <if test="countries != null" >
+        countries,
+      </if>
+      <if test="dappsales != null" >
+        dappSales,
+      </if>
+      <if test="dateofdeparture != null" >
+        dateofdeparture,
+      </if>
+      <if test="dateofexpire != null" >
+        dateofexpire,
+      </if>
+      <if test="dep != null" >
+        dep,
+      </if>
+      <if test="details != null" >
+        details,
+      </if>
+      <if test="discount != null" >
+        discount,
+      </if>
+      <if test="dpv != null" >
+        dpv,
+      </if>
+      <if test="drivingtime != null" >
+        drivingTime,
+      </if>
+      <if test="duv != null" >
+        duv,
+      </if>
+      <if test="encodeid != null" >
+        encodeId,
+      </if>
+      <if test="extensionimg != null" >
+        extensionImg,
+      </if>
+      <if test="featuretag != null" >
+        featureTag,
+      </if>
+      <if test="feeinfo != null" >
+        feeinfo,
+      </if>
+      <if test="flighttransfer != null" >
+        flightTransfer,
+      </if>
+      <if test="flighttype != null" >
+        flightType,
+      </if>
+      <if test="freetrippickup != null" >
+        freetripPickup,
+      </if>
+      <if test="freetripvisa != null" >
+        freetripVisa,
+      </if>
+      <if test="groupguarantee != null" >
+        groupGuarantee,
+      </if>
+      <if test="hascallonline != null" >
+        hasCallOnline,
+      </if>
+      <if test="highlights != null" >
+        highlights,
+      </if>
+      <if test="hotelfee != null" >
+        hotelFee,
+      </if>
+      <if test="hotelgrade != null" >
+        hotelGrade,
+      </if>
+      <if test="hotelgradetext != null" >
+        hotelGradeText,
+      </if>
+      <if test="hotelinfo != null" >
+        hotelInfo,
+      </if>
+      <if test="hotelpos != null" >
+        hotelPos,
+      </if>
+      <if test="hoteltypes != null" >
+        hotelTypes,
+      </if>
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="imgs != null" >
+        imgs,
+      </if>
+      <if test="issd != null" >
+        isSd,
+      </if>
+      <if test="istuan != null" >
+        isTuan,
+      </if>
+      <if test="isHotelFlightPackage != null" >
+        is_hotel_flight_package,
+      </if>
+      <if test="itineraryday != null" >
+        itineraryDay,
+      </if>
+      <if test="linesubjects != null" >
+        lineSubjects,
+      </if>
+      <if test="localdepartures != null" >
+        localDepartures,
+      </if>
+      <if test="longplanid != null" >
+        longPlanId,
+      </if>
+      <if test="longplantitle != null" >
+        longPlanTitle,
+      </if>
+      <if test="meal != null" >
+        meal,
+      </if>
+      <if test="mobfunction != null" >
+        mobFunction,
+      </if>
+      <if test="months != null" >
+        months,
+      </if>
+      <if test="noextrapayment != null" >
+        noExtraPayment,
+      </if>
+      <if test="noshopping != null" >
+        noShopping,
+      </if>
+      <if test="originalprice != null" >
+        originalPrice,
+      </if>
+      <if test="packdesc != null" >
+        packDesc,
+      </if>
+      <if test="pid != null" >
+        pid,
+      </if>
+      <if test="price != null" >
+        price,
+      </if>
+      <if test="pricedate != null" >
+        priceDate,
+      </if>
+      <if test="productfeatures != null" >
+        productFeatures,
+      </if>
+      <if test="productpromotions != null" >
+        productPromotions,
+      </if>
+      <if test="productrate != null" >
+        productRate,
+      </if>
+      <if test="productscore != null" >
+        productScore,
+      </if>
+      <if test="producttag != null" >
+        productTag,
+      </if>
+      <if test="promotion != null" >
+        promotion,
+      </if>
+      <if test="reviews != null" >
+        reviews,
+      </if>
+      <if test="roomnum != null" >
+        roomNum,
+      </if>
+      <if test="routegrade != null" >
+        routeGrade,
+      </if>
+      <if test="routetype != null" >
+        routeType,
+      </if>
+      <if test="sales != null" >
+        sales,
+      </if>
+      <if test="score != null" >
+        score,
+      </if>
+      <if test="searchTitle != null" >
+        search_title,
+      </if>
+      <if test="selforder != null" >
+        selfOrder,
+      </if>
+      <if test="shortplanid != null" >
+        shortPlanId,
+      </if>
+      <if test="shortplantitle != null" >
+        shortPlanTitle,
+      </if>
+      <if test="sightpoint != null" >
+        sightPoint,
+      </if>
+      <if test="sightticket != null" >
+        sightTicket,
+      </if>
+      <if test="sights != null" >
+        sights,
+      </if>
+      <if test="sightspotimages != null" >
+        sightspotImages,
+      </if>
+      <if test="sightspotB != null" >
+        sightspot_b,
+      </if>
+      <if test="soldcount != null" >
+        soldCount,
+      </if>
+      <if test="soldcount15 != null" >
+        soldCount15,
+      </if>
+      <if test="soldcount90 != null" >
+        soldCount90,
+      </if>
+      <if test="sourceurl != null" >
+        sourceurl,
+      </if>
+      <if test="subregions != null" >
+        subRegions,
+      </if>
+      <if test="summary != null" >
+        summary,
+      </if>
+      <if test="taocandes != null" >
+        taocanDes,
+      </if>
+      <if test="teamtype != null" >
+        teamType,
+      </if>
+      <if test="teamtypeid != null" >
+        teamTypeId,
+      </if>
+      <if test="testdiversitytag != null" >
+        testDiversityTag,
+      </if>
+      <if test="thumb != null" >
+        thumb,
+      </if>
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="totalprice != null" >
+        totalPrice,
+      </if>
+      <if test="totraffic != null" >
+        totraffic,
+      </if>
+      <if test="trafficfee != null" >
+        trafficFee,
+      </if>
+      <if test="trafficinfo != null" >
+        trafficInfo,
+      </if>
+      <if test="translator != null" >
+        translator,
+      </if>
+      <if test="ttsroutetype != null" >
+        ttsRouteType,
+      </if>
+      <if test="tuanttsid != null" >
+        tuanTtsId,
+      </if>
+      <if test="twoleveltype != null" >
+        twoLeveltype,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="url != null" >
+        url,
+      </if>
+      <if test="visaentrynum != null" >
+        visaEntryNum,
+      </if>
+      <if test="visaprebookdaysmax != null" >
+        visaPreBookDaysMax,
+      </if>
+      <if test="visastaydays != null" >
+        visaStayDays,
+      </if>
+      <if test="visaurgentstate != null" >
+        visaUrgentState,
+      </if>
+      <if test="visavalidperiod != null" >
+        visaValidPeriod,
+      </if>
+      <if test="wifigetway != null" >
+        wifiGetWay,
+      </if>
+      <if test="wrapperscore != null" >
+        wrapperScore,
+      </if>
+      <if test="wrapperstar != null" >
+        wrapperStar,
+      </if>
+      <if test="wrpparid != null" >
+        wrpparid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="accominclude != null" >
+        #{accominclude,jdbcType=VARCHAR},
+      </if>
+      <if test="accominterview != null" >
+        #{accominterview,jdbcType=INTEGER},
+      </if>
+      <if test="activitiesinfo != null" >
+        #{activitiesinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="adultnum != null" >
+        #{adultnum,jdbcType=INTEGER},
+      </if>
+      <if test="advanceday != null" >
+        #{advanceday,jdbcType=INTEGER},
+      </if>
+      <if test="alldate != null" >
+        #{alldate,jdbcType=VARCHAR},
+      </if>
+      <if test="aroundshorttitle != null" >
+        #{aroundshorttitle,jdbcType=VARCHAR},
+      </if>
+      <if test="arrive != null" >
+        #{arrive,jdbcType=VARCHAR},
+      </if>
+      <if test="availablebookdays != null" >
+        #{availablebookdays,jdbcType=VARCHAR},
+      </if>
+      <if test="b2c != null" >
+        #{b2c,jdbcType=INTEGER},
+      </if>
+      <if test="backtraffic != null" >
+        #{backtraffic,jdbcType=VARCHAR},
+      </if>
+      <if test="bmapgroupdest != null" >
+        #{bmapgroupdest,jdbcType=VARCHAR},
+      </if>
+      <if test="bmapgroupid != null" >
+        #{bmapgroupid,jdbcType=VARCHAR},
+      </if>
+      <if test="bmapgrouptype != null" >
+        #{bmapgrouptype,jdbcType=VARCHAR},
+      </if>
+      <if test="bookabletoday != null" >
+        #{bookabletoday,jdbcType=INTEGER},
+      </if>
+      <if test="bookabletomorrow != null" >
+        #{bookabletomorrow,jdbcType=INTEGER},
+      </if>
+      <if test="bookableweekend != null" >
+        #{bookableweekend,jdbcType=INTEGER},
+      </if>
+      <if test="bookingadult != null" >
+        #{bookingadult,jdbcType=INTEGER},
+      </if>
+      <if test="bookingchild != null" >
+        #{bookingchild,jdbcType=INTEGER},
+      </if>
+      <if test="bookingdate != null" >
+        #{bookingdate,jdbcType=VARCHAR},
+      </if>
+      <if test="bookingnum != null" >
+        #{bookingnum,jdbcType=VARCHAR},
+      </if>
+      <if test="bookingtimediff != null" >
+        #{bookingtimediff,jdbcType=VARCHAR},
+      </if>
+      <if test="bookingtypecatetitle != null" >
+        #{bookingtypecatetitle,jdbcType=VARCHAR},
+      </if>
+      <if test="busiline != null" >
+        #{busiline,jdbcType=INTEGER},
+      </if>
+      <if test="busitype != null" >
+        #{busitype,jdbcType=VARCHAR},
+      </if>
+      <if test="candidateimage != null" >
+        #{candidateimage,jdbcType=VARCHAR},
+      </if>
+      <if test="candidateimageid != null" >
+        #{candidateimageid,jdbcType=VARCHAR},
+      </if>
+      <if test="candidatetitle != null" >
+        #{candidatetitle,jdbcType=VARCHAR},
+      </if>
+      <if test="childnum != null" >
+        #{childnum,jdbcType=INTEGER},
+      </if>
+      <if test="citypoint != null" >
+        #{citypoint,jdbcType=VARCHAR},
+      </if>
+      <if test="citys != null" >
+        #{citys,jdbcType=VARCHAR},
+      </if>
+      <if test="click != null" >
+        #{click,jdbcType=INTEGER},
+      </if>
+      <if test="complement != null" >
+        #{complement,jdbcType=INTEGER},
+      </if>
+      <if test="countries != null" >
+        #{countries,jdbcType=VARCHAR},
+      </if>
+      <if test="dappsales != null" >
+        #{dappsales,jdbcType=VARCHAR},
+      </if>
+      <if test="dateofdeparture != null" >
+        #{dateofdeparture,jdbcType=VARCHAR},
+      </if>
+      <if test="dateofexpire != null" >
+        #{dateofexpire,jdbcType=VARCHAR},
+      </if>
+      <if test="dep != null" >
+        #{dep,jdbcType=VARCHAR},
+      </if>
+      <if test="details != null" >
+        #{details,jdbcType=VARCHAR},
+      </if>
+      <if test="discount != null" >
+        #{discount,jdbcType=VARCHAR},
+      </if>
+      <if test="dpv != null" >
+        #{dpv,jdbcType=INTEGER},
+      </if>
+      <if test="drivingtime != null" >
+        #{drivingtime,jdbcType=INTEGER},
+      </if>
+      <if test="duv != null" >
+        #{duv,jdbcType=INTEGER},
+      </if>
+      <if test="encodeid != null" >
+        #{encodeid,jdbcType=VARCHAR},
+      </if>
+      <if test="extensionimg != null" >
+        #{extensionimg,jdbcType=VARCHAR},
+      </if>
+      <if test="featuretag != null" >
+        #{featuretag,jdbcType=VARCHAR},
+      </if>
+      <if test="feeinfo != null" >
+        #{feeinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="flighttransfer != null" >
+        #{flighttransfer,jdbcType=VARCHAR},
+      </if>
+      <if test="flighttype != null" >
+        #{flighttype,jdbcType=VARCHAR},
+      </if>
+      <if test="freetrippickup != null" >
+        #{freetrippickup,jdbcType=INTEGER},
+      </if>
+      <if test="freetripvisa != null" >
+        #{freetripvisa,jdbcType=INTEGER},
+      </if>
+      <if test="groupguarantee != null" >
+        #{groupguarantee,jdbcType=INTEGER},
+      </if>
+      <if test="hascallonline != null" >
+        #{hascallonline,jdbcType=INTEGER},
+      </if>
+      <if test="highlights != null" >
+        #{highlights,jdbcType=VARCHAR},
+      </if>
+      <if test="hotelfee != null" >
+        #{hotelfee,jdbcType=VARCHAR},
+      </if>
+      <if test="hotelgrade != null" >
+        #{hotelgrade,jdbcType=VARCHAR},
+      </if>
+      <if test="hotelgradetext != null" >
+        #{hotelgradetext,jdbcType=VARCHAR},
+      </if>
+      <if test="hotelinfo != null" >
+        #{hotelinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="hotelpos != null" >
+        #{hotelpos,jdbcType=VARCHAR},
+      </if>
+      <if test="hoteltypes != null" >
+        #{hoteltypes,jdbcType=VARCHAR},
+      </if>
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="imgs != null" >
+        #{imgs,jdbcType=VARCHAR},
+      </if>
+      <if test="issd != null" >
+        #{issd,jdbcType=INTEGER},
+      </if>
+      <if test="istuan != null" >
+        #{istuan,jdbcType=INTEGER},
+      </if>
+      <if test="isHotelFlightPackage != null" >
+        #{isHotelFlightPackage,jdbcType=INTEGER},
+      </if>
+      <if test="itineraryday != null" >
+        #{itineraryday,jdbcType=INTEGER},
+      </if>
+      <if test="linesubjects != null" >
+        #{linesubjects,jdbcType=VARCHAR},
+      </if>
+      <if test="localdepartures != null" >
+        #{localdepartures,jdbcType=VARCHAR},
+      </if>
+      <if test="longplanid != null" >
+        #{longplanid,jdbcType=VARCHAR},
+      </if>
+      <if test="longplantitle != null" >
+        #{longplantitle,jdbcType=VARCHAR},
+      </if>
+      <if test="meal != null" >
+        #{meal,jdbcType=VARCHAR},
+      </if>
+      <if test="mobfunction != null" >
+        #{mobfunction,jdbcType=VARCHAR},
+      </if>
+      <if test="months != null" >
+        #{months,jdbcType=VARCHAR},
+      </if>
+      <if test="noextrapayment != null" >
+        #{noextrapayment,jdbcType=INTEGER},
+      </if>
+      <if test="noshopping != null" >
+        #{noshopping,jdbcType=INTEGER},
+      </if>
+      <if test="originalprice != null" >
+        #{originalprice,jdbcType=INTEGER},
+      </if>
+      <if test="packdesc != null" >
+        #{packdesc,jdbcType=VARCHAR},
+      </if>
+      <if test="pid != null" >
+        #{pid,jdbcType=INTEGER},
+      </if>
+      <if test="price != null" >
+        #{price,jdbcType=INTEGER},
+      </if>
+      <if test="pricedate != null" >
+        #{pricedate,jdbcType=VARCHAR},
+      </if>
+      <if test="productfeatures != null" >
+        #{productfeatures,jdbcType=VARCHAR},
+      </if>
+      <if test="productpromotions != null" >
+        #{productpromotions,jdbcType=VARCHAR},
+      </if>
+      <if test="productrate != null" >
+        #{productrate,jdbcType=VARCHAR},
+      </if>
+      <if test="productscore != null" >
+        #{productscore,jdbcType=VARCHAR},
+      </if>
+      <if test="producttag != null" >
+        #{producttag,jdbcType=VARCHAR},
+      </if>
+      <if test="promotion != null" >
+        #{promotion,jdbcType=VARCHAR},
+      </if>
+      <if test="reviews != null" >
+        #{reviews,jdbcType=VARCHAR},
+      </if>
+      <if test="roomnum != null" >
+        #{roomnum,jdbcType=VARCHAR},
+      </if>
+      <if test="routegrade != null" >
+        #{routegrade,jdbcType=VARCHAR},
+      </if>
+      <if test="routetype != null" >
+        #{routetype,jdbcType=VARCHAR},
+      </if>
+      <if test="sales != null" >
+        #{sales,jdbcType=VARCHAR},
+      </if>
+      <if test="score != null" >
+        #{score,jdbcType=VARCHAR},
+      </if>
+      <if test="searchTitle != null" >
+        #{searchTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="selforder != null" >
+        #{selforder,jdbcType=INTEGER},
+      </if>
+      <if test="shortplanid != null" >
+        #{shortplanid,jdbcType=VARCHAR},
+      </if>
+      <if test="shortplantitle != null" >
+        #{shortplantitle,jdbcType=VARCHAR},
+      </if>
+      <if test="sightpoint != null" >
+        #{sightpoint,jdbcType=VARCHAR},
+      </if>
+      <if test="sightticket != null" >
+        #{sightticket,jdbcType=VARCHAR},
+      </if>
+      <if test="sights != null" >
+        #{sights,jdbcType=VARCHAR},
+      </if>
+      <if test="sightspotimages != null" >
+        #{sightspotimages,jdbcType=VARCHAR},
+      </if>
+      <if test="sightspotB != null" >
+        #{sightspotB,jdbcType=VARCHAR},
+      </if>
+      <if test="soldcount != null" >
+        #{soldcount,jdbcType=INTEGER},
+      </if>
+      <if test="soldcount15 != null" >
+        #{soldcount15,jdbcType=INTEGER},
+      </if>
+      <if test="soldcount90 != null" >
+        #{soldcount90,jdbcType=INTEGER},
+      </if>
+      <if test="sourceurl != null" >
+        #{sourceurl,jdbcType=VARCHAR},
+      </if>
+      <if test="subregions != null" >
+        #{subregions,jdbcType=VARCHAR},
+      </if>
+      <if test="summary != null" >
+        #{summary,jdbcType=VARCHAR},
+      </if>
+      <if test="taocandes != null" >
+        #{taocandes,jdbcType=VARCHAR},
+      </if>
+      <if test="teamtype != null" >
+        #{teamtype,jdbcType=VARCHAR},
+      </if>
+      <if test="teamtypeid != null" >
+        #{teamtypeid,jdbcType=VARCHAR},
+      </if>
+      <if test="testdiversitytag != null" >
+        #{testdiversitytag,jdbcType=VARCHAR},
+      </if>
+      <if test="thumb != null" >
+        #{thumb,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="totalprice != null" >
+        #{totalprice,jdbcType=INTEGER},
+      </if>
+      <if test="totraffic != null" >
+        #{totraffic,jdbcType=VARCHAR},
+      </if>
+      <if test="trafficfee != null" >
+        #{trafficfee,jdbcType=VARCHAR},
+      </if>
+      <if test="trafficinfo != null" >
+        #{trafficinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="translator != null" >
+        #{translator,jdbcType=VARCHAR},
+      </if>
+      <if test="ttsroutetype != null" >
+        #{ttsroutetype,jdbcType=VARCHAR},
+      </if>
+      <if test="tuanttsid != null" >
+        #{tuanttsid,jdbcType=VARCHAR},
+      </if>
+      <if test="twoleveltype != null" >
+        #{twoleveltype,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null" >
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="visaentrynum != null" >
+        #{visaentrynum,jdbcType=VARCHAR},
+      </if>
+      <if test="visaprebookdaysmax != null" >
+        #{visaprebookdaysmax,jdbcType=VARCHAR},
+      </if>
+      <if test="visastaydays != null" >
+        #{visastaydays,jdbcType=VARCHAR},
+      </if>
+      <if test="visaurgentstate != null" >
+        #{visaurgentstate,jdbcType=VARCHAR},
+      </if>
+      <if test="visavalidperiod != null" >
+        #{visavalidperiod,jdbcType=VARCHAR},
+      </if>
+      <if test="wifigetway != null" >
+        #{wifigetway,jdbcType=VARCHAR},
+      </if>
+      <if test="wrapperscore != null" >
+        #{wrapperscore,jdbcType=VARCHAR},
+      </if>
+      <if test="wrapperstar != null" >
+        #{wrapperstar,jdbcType=VARCHAR},
+      </if>
+      <if test="wrpparid != null" >
+        #{wrpparid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>
